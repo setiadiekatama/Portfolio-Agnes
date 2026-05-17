@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>drg. Agnes Perana</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ══════════════════════════════════
+     NAVBAR
+════════════════════════════════════ -->
+    <header>
+      <nav class="navbar">
+        <a href="#" class="logo">drg. <span>Agnes</span> Perana</a>
+
+        <ul class="nav-menu">
+          <li><a href="#">Beranda</a></li>
+          <li><a href="#">Tentang</a></li>
+          <li><a href="#">Layanan</a></li>
+          <li><a href="#">Testimoni</a></li>
+          <li><a href="#">Kontak</a></li>
+          <li><a href="#" class="nav-btn">Buat Janji</a></li>
+        </ul>
+
+        <button class="hamburger" id="ham" aria-label="Buka menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+
+      <!-- Mobile nav drawer (ditampilkan saat hamburger diklik) -->
+      <nav class="mobile-nav" id="mobileNav">
+        <a href="#">Beranda</a>
+        <a href="#">Tentang</a>
+        <a href="#">Layanan</a>
+        <a href="#">Testimoni</a>
+        <a href="#">Kontak</a>
+        <a href="#" class="m-cta">Buat Janji →</a>
+      </nav>
+    </header>
+
+    <!-- ══════════════════════════════════
+     HERO
+════════════════════════════════════ -->
+    <section class="hero">
+      <div class="hero-inner">
+        <!-- Kiri: Konten Teks -->
+        <div class="hero-content">
+          <div class="status-pill">
+            <span class="status-dot"></span>
+            Open to Collaborattion
+          </div>
+
+          <h1 class="hero-name">drg. <em>Agnes</em> Perana, S.KG.</h1>
+
+          <p class="hero-degree"></p>
+          <!-- Harusnya dipake buat gelar -->
+
+          <div class="divider"></div>
+
+          <p class="hero-specialty">Dokter Gigi Umum</p>
+
+          <p class="hero-desc">
+            Dengan pengalaman lebih dari 12 tahun, drg. Agnes Perana memberikan perawatan gigi yang komprehensif, nyaman, dan berbasis teknologi modern. Setiap pasien mendapatkan perhatian penuh dan rencana perawatan yang dipersonalisasi.
+          </p>
+
+          <div class="service-tags">
+            <a href="#" class="tag">Pemeriksaan Gigi</a>
+            <span class="tag">Veneer Porcelain</span>
+            <span class="tag">Bleaching</span>
+            <span class="tag">Saluran Akar</span>
+            <span class="tag">Restorasi Estetik</span>
+            <span class="tag">Implan Gigi</span>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#" class="btn-primary">
+              <!-- Ikon kalender -->
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" />
+                <path d="M16 2v4M8 2v4M3 10h18" />
+              </svg>
+              Jadwalkan Konsultasi
+            </a>
+            <a href="#" class="btn-outline">
+              <!-- Ikon telepon -->
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 012 2h3a2 2 0 012 1.72c.18.96.47 1.9.87 2.81a2 2 0 01-.45 2.11L6.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.4 1.85.69 2.81.87A2 2 0 0122 16v2.92z"
+                />
+              </svg>
+              Hubungi Kami
+            </a>
+          </div>
+
+          <div class="stats-row">
+            <div class="stat">
+              <div class="stat-num">12<sup>+</sup></div>
+              <div class="stat-label">Tahun Pengalaman</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">4.000<sup>+</sup></div>
+              <div class="stat-label">Pasien Ditangani</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">98<sup>%</sup></div>
+              <div class="stat-label">Kepuasan Pasien</div>
+            </div>
+          </div>
+        </div>
+        <!-- /hero-content -->
+
+        <!-- Kanan: Foto Profil -->
+        <div class="hero-photo-wrap">
+          <div class="photo-frame">
+            <!--
+        ╔══════════════════════════════════════════════════════╗
+        ║           SPESIFIKASI FOTO PROFIL DOKTER             ║
+        ╠══════════════════════════════════════════════════════╣
+        ║  Ukuran      : Min. 600 × 800 px (rasio 3:4)        ║
+        ║  Format      : JPG atau WebP (kualitas ≥ 85%)        ║
+        ║  Orientasi   : Portrait (vertikal)                   ║
+        ║  Framing     : Kepala hingga pinggang (bust shot)    ║
+        ║                Kepala di 1/4 bagian atas frame       ║
+        ║  Background  : Polos — putih / abu / biru muda       ║
+        ║  Pencahayaan : Terang, merata, profesional           ║
+        ║  Pakaian     : Jas dokter putih / scrub biru         ║
+        ║  Ekspresi    : Senyum ramah, tatapan ke kamera       ║
+        ╠══════════════════════════════════════════════════════╣
+        ║  CARA PAKAI FOTO ASLI:                               ║
+        ║  Hapus seluruh <svg> di bawah, ganti dengan:        ║
+        ║                                                      ║
+        ║  <img src="foto-dokter.jpg"                          ║
+        ║       alt="drg. Agnes Perana, S.KG."                      ║
+        ║       style="width:100%;height:100%;                 ║
+        ║              object-fit:cover;                       ║
+        ║              object-position:center top;             ║
+        ║              display:block;" />                      ║
+        ╚══════════════════════════════════════════════════════╝
+        -->
+
+            <!-- SVG Ilustrasi Placeholder Dokter -->
+            <img src="assets/profile.png" alt="Foto Profil drg. Agnes Perana, S.KG." class="doctor-svg" />
+          </div>
+        </div>
+        <!-- /hero-photo-wrap -->
+      </div>
+      <!-- /hero-inner -->
+    </section>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
