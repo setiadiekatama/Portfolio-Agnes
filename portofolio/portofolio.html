@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio drg. Agnes Swari</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/favicon/favicon.png" type="image/png" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ══════════════════════════════════
+     NAVBAR
+════════════════════════════════════ -->
+    <header>
+      <nav class="navbar">
+        <a href="../index.html" class="logo">drg. <span>Agnes</span> Swari</a>
+
+        <ul class="nav-menu">
+          <li><a href="../index.html">Beranda</a></li>
+          <li><a href="#">Tentang</a></li>
+          <li><a href="#">Layanan</a></li>
+          <li><a href="portofolio.html">Portofolio</a></li>
+          <li><a href="#">Kontak</a></li>
+          <li><a href="#" class="nav-btn">Buat Janji</a></li>
+        </ul>
+
+        <button class="hamburger" id="ham" aria-label="Buka menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+
+      <!-- Mobile nav drawer (ditampilkan saat hamburger diklik) -->
+      <nav class="mobile-nav" id="mobileNav">
+        <a href="../index.html">Beranda</a>
+        <a href="#">Tentang</a>
+        <a href="#">Layanan</a>
+        <a href="portofolio.html">Portofolio</a>
+        <a href="#">Kontak</a>
+        <a href="#" class="m-cta">Buat Janji →</a>
+      </nav>
+    </header>
+
+    <!-- ═══════════════════════ HERO ═══════════════════════ -->
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-badge"><span>🦷</span> Dental Portfolio</div>
+        <h1>Transformasi <em>Senyum</em><br />yang Nyata</h1>
+        <p class="hero-sub">Dokumentasi prosedur dan hasil perawatan gigi dengan standar estetika dan kesehatan terbaik untuk setiap pasien.</p>
+        <div class="hero-stats">
+          <div class="stat">
+            <div class="stat-num">200+</div>
+            <div class="stat-label">Pasien Ditangani</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">8+</div>
+            <div class="stat-label">Prosedur Unggulan</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">98%</div>
+            <div class="stat-label">Kepuasan Pasien</div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-hint">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 10l5 5 5-5" /></svg>
+        Scroll
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ PROCEDURES ═══════════════════════ -->
+    <section class="section" style="background: var(--gray-100)">
+      <div class="section-header">
+        <span class="section-eyebrow">Rekam Medis Visual</span>
+        <h2 class="section-title">Portofolio <em>Prosedur</em></h2>
+        <div class="divider"></div>
+        <p class="section-desc">Setiap foto menampilkan kondisi sebelum dan sesudah tindakan. Geser panel untuk membandingkan hasil.</p>
+      </div>
+
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">Semua</button>
+        <button class="filter-btn" data-filter="estetika">Estetika</button>
+        <button class="filter-btn" data-filter="restorasi">Restorasi</button>
+        <button class="filter-btn" data-filter="bedah">Bedah & Prostodonsi</button>
+        <button class="filter-btn" data-filter="perawatan">Perawatan Dasar</button>
+      </div>
+
+      <div class="procedures-grid" id="proceduresGrid">
+        <!-- CARD 1 -->
+        <div class="card" data-cat="estetika">
+          <div class="ba-wrapper" data-ba>
+            <!-- BEFORE placeholder -->
+            <div class="ba-img ba-placeholder ba-placeholder-before">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"
+                />
+              </svg>
+              <span>Sebelum</span>
+            </div>
+            <!-- AFTER placeholder -->
+            <div class="ba-img ba-placeholder ba-placeholder-after">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"
+                />
+              </svg>
+              <span>Sesudah</span>
+            </div>
+            <div class="ba-slider-track">
+              <div class="ba-handle">⇌</div>
+            </div>
+            <div class="ba-labels">
+              <span class="ba-label">Before</span>
+              <span class="ba-label">After</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <div class="card-icon">🦷</div>
+              <div class="card-category">Estetika</div>
+            </div>
+            <h3 class="card-title">Veneer Porselen</h3>
+            <p class="card-desc">Lapisan tipis porselen yang ditempelkan pada permukaan gigi untuk memperbaiki warna, bentuk, dan ukuran gigi. Memberikan hasil senyum yang alami dan tahan lama.</p>
+            <div class="card-footer">
+              <div class="duration-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 6v6l4 2" />
+                </svg>
+                2 – 3 Kunjungan · 90 mnt/sesi
+              </div>
+              <span class="difficulty-badge diff-medium">Menengah</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="card" data-cat="perawatan">
+          <div class="ba-wrapper" data-ba>
+            <div class="ba-img ba-placeholder ba-placeholder-before">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"
+                />
+              </svg>
+              <span>Sebelum</span>
+            </div>
+            <div class="ba-img ba-placeholder ba-placeholder-after">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"
+                />
+              </svg>
+              <span>Sesudah</span>
+            </div>
+            <div class="ba-slider-track"><div class="ba-handle">⇌</div></div>
+            <div class="ba-labels"><span class="ba-label">Before</span><span class="ba-label">After</span></div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <div class="card-icon">✨</div>
+              <div class="card-category">Perawatan Dasar</div>
+            </div>
+            <h3 class="card-title">Scaling & Polishing</h3>
+            <p class="card-desc">Pembersihan karang gigi secara menyeluruh menggunakan ultrasonic scaler, dilanjutkan pemolesan untuk mengembalikan kilap alami email gigi dan mencegah penyakit periodontal.</p>
+            <div class="card-footer">
+              <div class="duration-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 6v6l4 2" />
+                </svg>
+                1 Kunjungan · 45 – 60 mnt
+              </div>
+              <span class="difficulty-badge diff-easy">Mudah</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="card" data-cat="estetika">
+          <div class="ba-wrapper" data-ba>
+            <div class="ba-img ba-placeholder ba-placeholder-before">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"
+                />
+              </svg>
+              <span>Sebelum</span>
+            </div>
+            <div class="ba-img ba-placeholder ba-placeholder-after">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"
+                />
+              </svg>
+              <span>Sesudah</span>
+            </div>
+            <div class="ba-slider-track"><div class="ba-handle">⇌</div></div>
+            <div class="ba-labels"><span class="ba-label">Before</span><span class="ba-label">After</span></div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <div class="card-icon">💎</div>
+              <div class="card-category">Estetika</div>
+            </div>
+            <h3 class="card-title">Bleaching / Whitening</h3>
+            <p class="card-desc">Pemutihan gigi profesional menggunakan gel hydrogen peroxide berkonsentrasi tinggi yang diaktifkan cahaya LED. Warna gigi meningkat hingga 8 shade dalam satu sesi.</p>
+            <div class="card-footer">
+              <div class="duration-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 6v6l4 2" />
+                </svg>
+                1 Kunjungan · 60 – 90 mnt
+              </div>
+              <span class="difficulty-badge diff-easy">Mudah</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="card" data-cat="restorasi">
+          <div class="ba-wrapper" data-ba>
+            <div class="ba-img ba-placeholder ba-placeholder-before">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"
+                />
+              </svg>
+              <span>Sebelum</span>
+            </div>
+            <div class="ba-img ba-placeholder ba-placeholder-after">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"
+                />
+              </svg>
+              <span>Sesudah</span>
+            </div>
+            <div class="ba-slider-track"><div class="ba-handle">⇌</div></div>
+            <div class="ba-labels"><span class="ba-label">Before</span><span class="ba-label">After</span></div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <div class="card-icon">🔬</div>
+              <div class="card-category">Restorasi</div>
+            </div>
+            <h3 class="card-title">Perawatan Saluran Akar</h3>
+            <p class="card-desc">Pengangkatan jaringan pulpa yang terinfeksi, sterilisasi, dan pengisian saluran akar untuk menyelamatkan gigi yang sudah tidak vital agar tetap berfungsi normal.</p>
+            <div class="card-footer">
+              <div class="duration-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 6v6l4 2" />
+                </svg>
+                2 – 4 Kunjungan · 60 – 120 mnt
+              </div>
+              <span class="difficulty-badge diff-hard">Kompleks</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 5 -->
+        <div class="card" data-cat="bedah">
+          <div class="ba-wrapper" data-ba>
+            <div class="ba-img ba-placeholder ba-placeholder-before">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"
+                />
+              </svg>
+              <span>Sebelum</span>
+            </div>
+            <div class="ba-img ba-placeholder ba-placeholder-after">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"
+                />
+              </svg>
+              <span>Sesudah</span>
+            </div>
+            <div class="ba-slider-track"><div class="ba-handle">⇌</div></div>
+            <div class="ba-labels"><span class="ba-label">Before</span><span class="ba-label">After</span></div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <div class="card-icon">🏥</div>
+              <div class="card-category">Bedah & Prostodonsi</div>
+            </div>
+            <h3 class="card-title">Implan Gigi</h3>
+            <p class="card-desc">Penggantian akar gigi yang hilang menggunakan titanium screw yang diintegrasikan ke tulang rahang, kemudian dipasangi mahkota porselen untuk fungsi dan estetika optimal.</p>
+            <div class="card-footer">
+              <div class="duration-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 6v6l4 2" />
+                </svg>
+                3 – 6 Bulan · Multi-sesi
+              </div>
+              <span class="difficulty-badge diff-hard">Kompleks</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 6 -->
+        <div class="card" data-cat="restorasi">
+          <div class="ba-wrapper" data-ba>
+            <div class="ba-img ba-placeholder ba-placeholder-before">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"
+                />
+              </svg>
+              <span>Sebelum</span>
+            </div>
+            <div class="ba-img ba-placeholder ba-placeholder-after">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"
+                />
+              </svg>
+              <span>Sesudah</span>
+            </div>
+            <div class="ba-slider-track"><div class="ba-handle">⇌</div></div>
+            <div class="ba-labels"><span class="ba-label">Before</span><span class="ba-label">After</span></div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <div class="card-icon">👑</div>
+              <div class="card-category">Restorasi</div>
+            </div>
+            <h3 class="card-title">Mahkota Zirconia</h3>
+            <p class="card-desc">Restorasi gigi yang rusak parah menggunakan mahkota full-zirconia atau zirconia-porselen. Kuat, biokompatibel, dan secara estetika identik dengan gigi asli.</p>
+            <div class="card-footer">
+              <div class="duration-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 6v6l4 2" />
+                </svg>
+                2 Kunjungan · 90 mnt/sesi
+              </div>
+              <span class="difficulty-badge diff-medium">Menengah</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /grid -->
+    </section>
+
+    <!-- ═══════════════════════ ABOUT STRIP ═══════════════════════ -->
+    <section class="about-strip">
+      <div class="about-inner">
+        <div class="about-text">
+          <span class="section-eyebrow">Tentang Saya</span>
+          <h2 class="section-title">Dedikasi untuk <em>Senyum Sehat</em></h2>
+          <p>Saya adalah dokter gigi umum dengan pengalaman klinis lebih dari 5 tahun, berfokus pada perawatan estetika dan restoratif dengan pendekatan minim invasif.</p>
+          <p>Setiap kasus diperlakukan secara individual—merencanakan hasil yang tidak hanya sehat secara medis, tetapi juga indah secara estetika dan nyaman bagi pasien.</p>
+        </div>
+        <div class="about-highlights">
+          <div class="highlight-box">
+            <div class="highlight-icon">🎓</div>
+            <div class="highlight-title">Pendidikan</div>
+            <div class="highlight-val">Universitas Mahasaraswati Denpasar</div>
+          </div>
+          <div class="highlight-box">
+            <div class="highlight-icon">📅</div>
+            <div class="highlight-title">Pengalaman</div>
+            <div class="highlight-val">5+ Thn</div>
+          </div>
+          <div class="highlight-box">
+            <div class="highlight-icon">🦷</div>
+            <div class="highlight-title">Kasus Selesai</div>
+            <div class="highlight-val">200+</div>
+          </div>
+          <div class="highlight-box">
+            <div class="highlight-icon">⭐</div>
+            <div class="highlight-title">Rating Pasien</div>
+            <div class="highlight-val">4.9/5</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+    <footer><strong>drg. Ni Made Agnes Perana Swari</strong> &nbsp;·&nbsp; Portofolio Dental &nbsp;·&nbsp; © 2026</footer>
+
+    <!-- ═══════════════════════ SCRIPTS ═══════════════════════ -->
+    <script src="script.js"></script>
+  </body>
+</html>
