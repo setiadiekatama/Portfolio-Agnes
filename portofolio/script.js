@@ -20,23 +20,29 @@ mobileNav.querySelectorAll("a").forEach((link) => {
   });
 });
 
+/* ═══════════════════════ SCRIPTS ═══════════════════════ */
+
 /* ── Before/After Slider ── */
 document.querySelectorAll("[data-ba]").forEach((wrapper) => {
-  const before = wrapper.querySelector(".ba-before, .ba-placeholder-before");
-  const track = wrapper.querySelector(".ba-slider-track");
+  const before = wrapper.querySelector(".ba-before");
+  const divider = wrapper.querySelector(".ba-divider");
   let dragging = false;
 
-  function setPos(x) {
+  function setPos(clientX) {
     const rect = wrapper.getBoundingClientRect();
-    let pct = ((x - rect.left) / rect.width) * 100;
-    pct = Math.max(5, Math.min(95, pct));
+    let pct = ((clientX - rect.left) / rect.width) * 100;
+    pct = Math.max(2, Math.min(98, pct));
     before.style.clipPath = `inset(0 ${100 - pct}% 0 0)`;
-    track.style.left = pct + "%";
+    divider.style.left = pct + "%";
   }
+
+  // initialise at 50 %
+  setPos(wrapper.getBoundingClientRect().left + wrapper.getBoundingClientRect().width / 2);
 
   wrapper.addEventListener("mousedown", (e) => {
     dragging = true;
     setPos(e.clientX);
+    e.preventDefault();
   });
   wrapper.addEventListener(
     "touchstart",
@@ -46,6 +52,7 @@ document.querySelectorAll("[data-ba]").forEach((wrapper) => {
     },
     { passive: true },
   );
+
   document.addEventListener("mousemove", (e) => {
     if (dragging) setPos(e.clientX);
   });
@@ -56,8 +63,13 @@ document.querySelectorAll("[data-ba]").forEach((wrapper) => {
     },
     { passive: true },
   );
-  document.addEventListener("mouseup", () => (dragging = false));
-  document.addEventListener("touchend", () => (dragging = false));
+
+  document.addEventListener("mouseup", () => {
+    dragging = false;
+  });
+  document.addEventListener("touchend", () => {
+    dragging = false;
+  });
 });
 
 /* ── Filter Buttons ── */

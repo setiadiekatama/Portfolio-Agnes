@@ -40,7 +40,7 @@ body {
   font-family: "Plus Jakarta Sans", sans-serif;
   background: var(--white);
   color: var(--blue-950);
-  min-height: 100vh;
+  /* min-height: 100vh; */
   padding-top: 68px; /* Height of navbar */
 }
 
@@ -155,10 +155,33 @@ body {
 
 /* ── HERO SECTION ─────────────────── */
 .hero {
+  position: relative;
   background: var(--blue-50);
   padding: 60px 5% 60px;
   overflow: hidden;
-  min-height: 100vh;
+  min-height: calc(100vh - 68px); /* Full viewport height minus navbar */
+}
+
+.scroll-hint {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--blue-700);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  z-index: 2;
+  animation: bounce 2s infinite;
+}
+
+.scroll-hint svg {
+  width: 18px;
+  opacity: 0.8;
 }
 
 .hero-inner {
@@ -430,6 +453,16 @@ body {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-8px);
   }
 }
 
