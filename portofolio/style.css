@@ -115,11 +115,17 @@ body {
 /* ── MOBILE NAV DRAWER ────────────── */
 .mobile-nav {
   display: none;
+  position: fixed;
+  top: 68px;
+  left: 0;
+  width: 100%;
   flex-direction: column;
   background: var(--white);
   border-bottom: 1px solid var(--gray-300);
   padding: 1rem 5%;
   gap: 0;
+  z-index: 99;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.12);
 }
 .mobile-nav.open {
   display: flex;
