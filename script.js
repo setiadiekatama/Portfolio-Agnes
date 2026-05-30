@@ -1,8 +1,3 @@
-/* =============================================
-   SmileClinic — Main JavaScript
-   File   : script.js
-   ============================================= */
-
 /**
  * Hamburger menu toggle untuk navigasi mobile.
  * Menambahkan / menghapus class "open" pada .mobile-nav
